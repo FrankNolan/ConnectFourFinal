@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="connectFourFinal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:connectFourFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    
+    
+    <Grid x:Name ="mainGame">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/wood.jpg"/>
+        </Grid.Background>
+
+        <StackPanel x:Name="stkpanel" Orientation="Vertical" Tapped="StackPanel_Tapped">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="6*" />
+             
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <TextBlock x:Name="title" Margin="0,25,0,0" FontFamily="Constantia" Text="Connect Four" FontSize="60" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
+            <TextBlock x:Name="playerScores" FontFamily="Constantia" Margin="0,15,0,0" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
+            <TextBlock x:Name="winner" Margin="0,15,0,0" FontFamily="Constantia" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
+
+            <Grid Name="board" Margin="0,25,0,0" Height="400" Width="800" Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+          
+
+
+            
+            
+        </StackPanel>
+
+
+       
+
+    </Grid>
+</Page>
